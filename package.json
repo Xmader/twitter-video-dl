@@ -1,0 +1,38 @@
+{
+  "name": "twitter-video-dl",
+  "description": "Download video from Twitter",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "bin": {
+    "twitter-video-dl": "./cli/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xmader/twitter-video-dl.git"
+  },
+  "author": "Xmader",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Xmader/twitter-video-dl/issues"
+  },
+  "homepage": "https://github.com/Xmader/twitter-video-dl#readme",
+  "keywords": [
+    "twitter",
+    "video"
+  ],
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.4",
+    "@types/yargs": "^15.0.2",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "npm run build -- --watch",
+    "bump-version:patch": "npm version patch --no-git-tag",
+    "bump-version:minor": "npm version minor --no-git-tag"
+  }
+}

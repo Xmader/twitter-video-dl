@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "lib": [
+            "es2020",
+            "DOM"
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "sourceMap": false,
+        "declaration": true,
+        "rootDir": "./src",
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/*"
+    ]
+}
