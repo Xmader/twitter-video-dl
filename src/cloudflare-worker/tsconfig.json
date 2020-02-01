@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "sourceMap": false,
+        "lib": [
+            "esnext",
+            "webworker",
+        ],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "declaration": true,
+    }
+}

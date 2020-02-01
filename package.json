@@ -1,7 +1,7 @@
 {
   "name": "twitter-video-dl",
-  "description": "Download video from Twitter",
-  "version": "1.0.0",
+  "description": "Download videos from Twitter",
+  "version": "1.1.0",
   "main": "dist/main.js",
   "bin": {
     "twitter-video-dl": "./cli/cli.js"
@@ -27,11 +27,17 @@
   "devDependencies": {
     "@types/node-fetch": "^2.5.4",
     "@types/yargs": "^15.0.2",
+    "rollup": "^1.26.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "types-cloudflare-worker": "^1.1.1",
     "typescript": "^3.7.5"
   },
   "scripts": {
     "build": "tsc",
     "watch": "npm run build -- --watch",
+    "build:cloudflare-worker": "rollup -c",
+    "watch:cloudflare-worker": "npm run build:cloudflare-worker -- --watch",
     "bump-version:patch": "npm version patch --no-git-tag",
     "bump-version:minor": "npm version minor --no-git-tag"
   }

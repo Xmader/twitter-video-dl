@@ -20,3 +20,4 @@ jobs:
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          # d0e4..........
